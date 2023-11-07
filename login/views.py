@@ -7,7 +7,6 @@ def login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         passowrd = request.POST.get('password')
-        print(username, passowrd)
         if username == '2022-01-11' and passowrd == '2022-11-05':
             # return redirect('/index')
             return render(request, 'heart.html')
