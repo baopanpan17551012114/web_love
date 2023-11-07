@@ -3,7 +3,6 @@ config_location:
 include /etc/nginx/conf.d/*.conf;
 include /etc/nginx/sites-enabled/*;
 
-
 config:
 server {
   charset utf-8;
@@ -19,7 +18,6 @@ server {
     proxy_pass http://unix:/tmp/106.14.215.109.socket;  # 改成你的 公网IP
   }
 }
-
 
 start_command:
 sudo nginx -s reload
